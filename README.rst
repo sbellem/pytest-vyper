@@ -10,9 +10,17 @@ Pytest plugin for the `vyper`_ smart contract language.
 
 Installation
 ------------
+From PyPI:
+
 .. code-block:: shell
 
-    $ pip install git+https://github.com/sbellem/pytest-vyper
+    $ pip install pytest-vyper
+
+Latest from Github:
+
+.. code-block:: shell
+
+    $ pip install initc3/pytest-vyper
 
 License
 -------
