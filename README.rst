@@ -46,3 +46,4 @@ Thanks to `IC3`_ (The Initiative For Cryptocurrencies & Contracts) and Andrew Mi
 .. _dsl: https://decentralize.ece.illinois.edu/
 .. _uiuc: https://spri.engr.illinois.edu/
 .. _vyper: https://github.com/vyperlang/vyper
+.. _ratel: https://github.com/ratelang/ratel
