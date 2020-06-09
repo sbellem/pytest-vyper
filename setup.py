@@ -8,12 +8,9 @@ with open("README.rst") as readme_file:
 
 
 install_requires = [
-    "eth-tester[py-evm]>=0.3.0b1,<0.4",
-    "hypothesis[lark]>=4.53.2,<5",
-    "lark-parser>=0.7.8,<1",
     "pytest",
-    "vyper",
-    "web3",
+    "pytest-vyper",
+    "ratl @ git+https://github.com/ratelang/ratel.git",
 ]
 
 dev_requires = ["ipdb", "ipython"]
@@ -33,17 +30,17 @@ extras_require = {
 }
 
 setup(
-    name="pytest-vyper",
+    name="pytest-ratl",
     version="0.1.0",
     author="Syvain Bellemare",
     author_email="sbellem@gmail.com",
     maintainer="Syvain Bellemare",
     maintainer_email="sbellem@gmail.com",
     license="Apache Software License 2.0",
-    url="https://github.com/sbellem/pytest-vyper",
-    description="Plugin for the vyper smart contract language.",
+    url="https://github.com/sbellem/pytest-ratl",
+    description="Plugin for the ratl experimental language.",
     long_description=readme,
-    packages=find_packages(include=["pytest_vyper"]),
+    packages=find_packages(include=["pytest_ratl"]),
     python_requires=">=3.6",
     install_requires=install_requires,
     classifiers=[
@@ -60,7 +57,6 @@ setup(
         "Operating System :: OS Independent",
         "License :: OSI Approved :: Apache Software License",
     ],
-    entry_points={"pytest11": ["vyper = pytest_vyper.plugin"]},
+    entry_points={"pytest11": ["ratl = pytest_ratl.plugin"]},
     extras_require=extras_require,
-    package_data={"pytest_vyper": ["vyper.lark"]},
 )

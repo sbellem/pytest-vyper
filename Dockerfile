@@ -1,6 +1,6 @@
 FROM python:latest
 
-WORKDIR /usr/src/pytest-vyper
+WORKDIR /usr/src/pytest-ratl
 
 COPY . .
 

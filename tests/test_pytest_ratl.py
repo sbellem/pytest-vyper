@@ -14,7 +14,7 @@ def test_w3_fixture_is_available(request):
     assert w3.eth.gasPriceStrategy(None) == 0
 
 
-def test_get_vyper_contract_fixture(testdir):
+def test_get_ratl_contract_fixture(testdir):
     """Make sure that pytest accepts our fixture."""
 
     # create a temporary pytest test module
@@ -26,12 +26,12 @@ def test_get_vyper_contract_fixture(testdir):
 
             @pytest.fixture
             def contract_source():
-                with open('{TEST_DIR.joinpath('example.vy')}') as f:
+                with open('{TEST_DIR.joinpath('example.rl')}') as f:
                     c_src = f.read()
                 return c_src
 
-            def test_initial_state(get_vyper_contract, contract_source):
-                contract = get_vyper_contract(contract_source, 4)
+            def test_initial_state(get_ratl_contract, contract_source):
+                contract = get_ratl_contract(contract_source, 4)
                 assert contract.storedData() == 4
             """
         )

@@ -1,15 +1,15 @@
 version: '3.7'
 
 volumes:
-  pytest_vyper.egg-info:
+  pytest_ratl.egg-info:
 
 services:
-  pytest-vyper:
+  pytest-ratl:
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/usr/src/pytest-vyper
-      - pytest_vyper.egg-info:/usr/src/pytest-vyper/pytest_vyper.egg-info
+      - .:/usr/src/pytest-ratl
+      - pytest_ratl.egg-info:/usr/src/pytest-ratl/pytest_ratl.egg-info
     environment:
       PYTHONBREAKPOINT: ipdb.set_trace

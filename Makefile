@@ -49,7 +49,7 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr .hypothesis
 
 lint: ## check style with flake8
-	flake8 pytest_vyper.py tests
+	flake8 pytest_ratel tests
 
 test: ## run tests quickly with the default Python
 	pytest
