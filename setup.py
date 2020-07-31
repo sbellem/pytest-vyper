@@ -9,8 +9,8 @@ with open("README.rst") as readme_file:
 
 install_requires = [
     "pytest",
-    "pytest-vyper",
-    "ratl @ git+https://github.com/ratelang/ratel.git",
+    "pytest-vyper @ git+https://github.com/sbellem/pytest-vyper.git",
+    "ratl @ git+https://github.com/ratelang/ratel.git@vyper-0.2",
 ]
 
 dev_requires = ["ipdb", "ipython"]
