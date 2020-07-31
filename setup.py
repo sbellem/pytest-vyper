@@ -12,7 +12,7 @@ install_requires = [
     "hypothesis[lark]>=4.53.2,<5",
     "lark-parser>=0.7.8,<1",
     "pytest",
-    "vyper @ git+https://github.com/vyperlang/vyper.git@8c925299833f6051fcf50ec3cdeef59c45346e45",
+    "vyper~=0.2",
     "web3",
 ]
 
