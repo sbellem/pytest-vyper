@@ -9,8 +9,8 @@ with open("README.rst") as readme_file:
 
 install_requires = [
     "eth-tester[py-evm]>=0.3.0b1,<0.4",
-    "hypothesis[lark]>=4.53.2,<5",
-    "lark-parser>=0.7.8,<1",
+    "lark-parser>=0.8,<1.0",
+    "hypothesis[lark]>=5.16.2,<6.0",
     "pytest",
     "vyper~=0.2",
     "web3",
